@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
+
     <joint name="stereo" type="fixed">
         <parent link="base_link"/>
         <child link="stereo_link"/>

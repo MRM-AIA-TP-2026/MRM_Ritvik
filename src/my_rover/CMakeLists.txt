@@ -10,9 +10,24 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(gazebo_ros REQUIRED)
 find_package(robot_state_publisher REQUIRED)
-
+find_package(rclcpp REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 find_package(xacro REQUIRED)
 
+add_executable(gps_node src/navigation.cpp)
+ament_target_dependencies(gps_node rclcpp sensor_msgs geometry_msgs std_msgs tf2 tf2_geometry_msgs)
+
+
+install(TARGETS
+  gps_node
+  DESTINATION lib/${PROJECT_NAME})
+  
 install(
   DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}/

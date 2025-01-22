@@ -197,6 +197,43 @@ my_rover_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_rover_uninstall.dir/build.make CMakeFiles/my_rover_uninstall.dir/build
 .PHONY : my_rover_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named gps_node
+
+# Build rule for target.
+gps_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gps_node
+.PHONY : gps_node
+
+# fast build rule for target.
+gps_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/build
+.PHONY : gps_node/fast
+
+src/navigation.o: src/navigation.cpp.o
+.PHONY : src/navigation.o
+
+# target to build an object file
+src/navigation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/navigation.cpp.o
+.PHONY : src/navigation.cpp.o
+
+src/navigation.i: src/navigation.cpp.i
+.PHONY : src/navigation.i
+
+# target to preprocess a source file
+src/navigation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/navigation.cpp.i
+.PHONY : src/navigation.cpp.i
+
+src/navigation.s: src/navigation.cpp.s
+.PHONY : src/navigation.s
+
+# target to generate assembly for a file
+src/navigation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/navigation.cpp.s
+.PHONY : src/navigation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... my_rover_uninstall"
 	@echo "... uninstall"
+	@echo "... gps_node"
+	@echo "... src/navigation.o"
+	@echo "... src/navigation.i"
+	@echo "... src/navigation.s"
 .PHONY : help
 
 

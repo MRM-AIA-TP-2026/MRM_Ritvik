@@ -1,5 +1,6 @@
 /home/ritvik/rover_ws/build/my_rover/CMakeFiles/uninstall.dir
 /home/ritvik/rover_ws/build/my_rover/CMakeFiles/my_rover_uninstall.dir
+/home/ritvik/rover_ws/build/my_rover/CMakeFiles/gps_node.dir
 /home/ritvik/rover_ws/build/my_rover/CMakeFiles/test.dir
 /home/ritvik/rover_ws/build/my_rover/CMakeFiles/edit_cache.dir
 /home/ritvik/rover_ws/build/my_rover/CMakeFiles/rebuild_cache.dir

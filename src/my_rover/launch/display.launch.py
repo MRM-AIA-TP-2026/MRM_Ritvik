@@ -1,4 +1,3 @@
-
 import launch
 from launch.substitutions import Command, LaunchConfiguration
 import launch_ros
