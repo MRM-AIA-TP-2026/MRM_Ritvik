@@ -1,0 +1,42 @@
+[0.007s] Invoking command in '/home/ritvik/rover_ws/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target gps_node[0m
+[0.043s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_node.dir/src/gps_test.cpp.o[0m
+[6.477s] [100%] [32m[1mLinking CXX executable gps_node[0m
+[6.774s] [100%] Built target gps_node
+[6.785s] Invoked command in '/home/ritvik/rover_ws/build/my_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22
+[6.793s] Invoking command in '/home/ritvik/rover_ws/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ritvik/rover_ws/build/my_rover
+[6.798s] -- Install configuration: ""
+[6.798s] -- Installing: /home/ritvik/rover_ws/install/my_rover/lib/my_rover/gps_node
+[6.800s] -- Set runtime path of "/home/ritvik/rover_ws/install/my_rover/lib/my_rover/gps_node" to ""
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/robot.launch.py
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/gps.launch.py
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/display.launch.py
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/gazebo.launch.py
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/gps.xacro
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/material.xacro
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/inertial.xacro
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/cam.xacro
+[6.801s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/stereo.xacro
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/lidar.xacro
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/imu.xacro
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/robot.urdf.xacro
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//rviz
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//rviz/config.rviz
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.sh
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.dsv
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/path.sh
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/path.dsv
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.bash
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.sh
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.zsh
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.dsv
+[6.802s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover/package.dsv
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/packages/my_rover
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/cmake/my_roverConfig.cmake
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/cmake/my_roverConfig-version.cmake
+[6.802s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/package.xml
+[6.803s] Invoked command in '/home/ritvik/rover_ws/build/my_rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ritvik/rover_ws/build/my_rover

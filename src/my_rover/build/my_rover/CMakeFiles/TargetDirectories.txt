@@ -1,0 +1,10 @@
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/uninstall.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/my_rover_uninstall.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/gps_node.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/test.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/edit_cache.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/rebuild_cache.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/list_install_components.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/install.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/install/local.dir
+/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/install/strip.dir

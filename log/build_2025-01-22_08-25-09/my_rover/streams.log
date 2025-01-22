@@ -1,0 +1,95 @@
+[0.013s] Invoking command in '/home/ritvik/rover_ws/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22
+[0.090s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.261s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.308s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.312s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.320s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.335s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.350s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.390s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.392s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.516s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.625s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.671s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.675s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.692s] -- Searching for dependencies of ignition-math6
+[0.697s] -- Looking for OGRE...
+[0.710s] -- Found Ogre Ghadamon (1.9.0)
+[0.710s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.724s] -- Looking for OGRE_Paging...
+[0.724s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.724s] -- Looking for OGRE_Terrain...
+[0.725s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.725s] -- Looking for OGRE_Property...
+[0.725s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.725s] -- Looking for OGRE_RTShaderSystem...
+[0.725s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.725s] -- Looking for OGRE_Volume...
+[0.725s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.725s] -- Looking for OGRE_Overlay...
+[0.725s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.828s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.829s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.830s] -- Searching for dependencies of ignition-transport8
+[0.849s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.860s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.866s] -- Checking for module 'libzmq >= 4'
+[0.884s] --   Found libzmq , version 4.3.4
+[0.935s] -- Checking for module 'uuid'
+[0.949s] --   Found uuid, version 2.37.2
+[0.987s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.988s] -- Searching for dependencies of ignition-msgs5
+[1.011s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.017s] -- Checking for module 'tinyxml2'
+[1.034s] --   Found tinyxml2, version 9.0.0
+[1.074s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.075s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.075s] -- Searching for dependencies of ignition-common3
+[1.075s] -- Looking for dlfcn.h - found
+[1.076s] -- Looking for libdl - found
+[1.091s] -- Searching for <ignition-common3> component [graphics]
+[1.092s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.092s] -- Searching for dependencies of ignition-common3-graphics
+[1.093s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.095s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.095s] -- Searching for dependencies of ignition-fuel_tools4
+[1.145s] -- Checking for module 'jsoncpp'
+[1.160s] --   Found jsoncpp, version 1.9.5
+[1.206s] -- Checking for module 'libzip'
+[1.220s] --   Found libzip, version 1.7.3
+[1.260s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.261s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.261s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.265s] -- Gazebo version: 11.10
+[1.267s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.292s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.294s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.458s] -- Found nav2_msgs: 1.1.17 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.505s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.507s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.600s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.600s] -- Configured cppcheck include dirs: 
+[1.600s] -- Configured cppcheck exclude dirs and/or files: 
+[1.600s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.601s] -- Added test 'lint_cmake' to check CMake code style
+[1.602s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.603s] -- Added test 'uncrustify' to check C / C++ code style
+[1.603s] -- Configured uncrustify additional arguments: 
+[1.604s] -- Added test 'xmllint' to check XML markup files
+[1.605s] -- Configuring done
+[1.611s] [31mCMake Error at CMakeLists.txt:20 (add_executable):
+[1.611s]   Cannot find source file:
+[1.611s] 
+[1.611s]     src/simple_navigator.cpp
+[1.611s] 
+[1.611s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.612s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.612s] 
+[1.612s] [0m
+[1.613s] [31mCMake Error at CMakeLists.txt:20 (add_executable):
+[1.613s]   No SOURCES given to target: simple_navigator
+[1.613s] 
+[1.613s] [0m
+[1.613s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.628s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.632s] Invoked command in '/home/ritvik/rover_ws/build/my_rover' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22

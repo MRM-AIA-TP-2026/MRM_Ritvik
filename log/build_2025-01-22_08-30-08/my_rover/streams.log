@@ -1,0 +1,121 @@
+[0.013s] Invoking command in '/home/ritvik/rover_ws/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22
+[0.051s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.188s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.218s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.221s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.226s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.237s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.249s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.280s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.281s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.393s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.484s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.515s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.518s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.523s] -- Searching for dependencies of ignition-math6
+[0.525s] -- Looking for OGRE...
+[0.536s] -- Found Ogre Ghadamon (1.9.0)
+[0.536s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.546s] -- Looking for OGRE_Paging...
+[0.547s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.547s] -- Looking for OGRE_Terrain...
+[0.547s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.547s] -- Looking for OGRE_Property...
+[0.547s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.547s] -- Looking for OGRE_RTShaderSystem...
+[0.547s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.547s] -- Looking for OGRE_Volume...
+[0.548s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.548s] -- Looking for OGRE_Overlay...
+[0.548s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.637s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.637s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.637s] -- Searching for dependencies of ignition-transport8
+[0.657s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.670s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.676s] -- Checking for module 'libzmq >= 4'
+[0.691s] --   Found libzmq , version 4.3.4
+[0.741s] -- Checking for module 'uuid'
+[0.755s] --   Found uuid, version 2.37.2
+[0.793s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.793s] -- Searching for dependencies of ignition-msgs5
+[0.818s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.825s] -- Checking for module 'tinyxml2'
+[0.841s] --   Found tinyxml2, version 9.0.0
+[0.880s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.880s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.881s] -- Searching for dependencies of ignition-common3
+[0.881s] -- Looking for dlfcn.h - found
+[0.881s] -- Looking for libdl - found
+[0.897s] -- Searching for <ignition-common3> component [graphics]
+[0.898s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.898s] -- Searching for dependencies of ignition-common3-graphics
+[0.899s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.900s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.900s] -- Searching for dependencies of ignition-fuel_tools4
+[0.950s] -- Checking for module 'jsoncpp'
+[0.964s] --   Found jsoncpp, version 1.9.5
+[1.010s] -- Checking for module 'libzip'
+[1.025s] --   Found libzip, version 1.7.3
+[1.063s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.064s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.064s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.066s] -- Gazebo version: 11.10
+[1.068s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.088s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.090s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.219s] -- Found nav2_msgs: 1.1.17 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.261s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.262s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.352s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.352s] -- Configured cppcheck include dirs: 
+[1.352s] -- Configured cppcheck exclude dirs and/or files: 
+[1.352s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.353s] -- Added test 'lint_cmake' to check CMake code style
+[1.353s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.354s] -- Added test 'uncrustify' to check C / C++ code style
+[1.355s] -- Configured uncrustify additional arguments: 
+[1.355s] -- Added test 'xmllint' to check XML markup files
+[1.356s] -- Configuring done
+[1.370s] -- Generating done
+[1.376s] -- Build files have been written to: /home/ritvik/rover_ws/build/my_rover
+[1.427s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_navigator.dir/src/simple_navigator.cpp.o[0m
+[5.579s] [100%] [32m[1mLinking CXX executable simple_navigator[0m
+[5.797s] [100%] Built target simple_navigator
+[5.811s] Invoked command in '/home/ritvik/rover_ws/build/my_rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22
+[5.822s] Invoking command in '/home/ritvik/rover_ws/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ritvik/rover_ws/build/my_rover
+[5.832s] -- Install configuration: ""
+[5.832s] -- Installing: /home/ritvik/rover_ws/install/my_rover/lib/my_rover/simple_navigator
+[5.833s] -- Set runtime path of "/home/ritvik/rover_ws/install/my_rover/lib/my_rover/simple_navigator" to ""
+[5.833s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch
+[5.833s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/robot.launch.py
+[5.833s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/display.launch.py
+[5.834s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/nav2_launch.py
+[5.834s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/gazebo.launch.py
+[5.834s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf
+[5.834s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/gps.xacro
+[5.834s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/material.xacro
+[5.834s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/inertial.xacro
+[5.834s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/cam.xacro
+[5.834s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/stereo.xacro
+[5.835s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/lidar.xacro
+[5.835s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/imu.xacro
+[5.835s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/robot.urdf.xacro
+[5.835s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//rviz
+[5.835s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover//rviz/config.rviz
+[5.835s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover
+[5.835s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover
+[5.835s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.sh
+[5.835s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.dsv
+[5.836s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/path.sh
+[5.836s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/path.dsv
+[5.836s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.bash
+[5.836s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.sh
+[5.836s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.zsh
+[5.836s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.dsv
+[5.836s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover/package.dsv
+[5.836s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/packages/my_rover
+[5.836s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/cmake/my_roverConfig.cmake
+[5.836s] -- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/cmake/my_roverConfig-version.cmake
+[5.836s] -- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover/package.xml
+[5.838s] Invoked command in '/home/ritvik/rover_ws/build/my_rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ritvik/rover_ws/build/my_rover

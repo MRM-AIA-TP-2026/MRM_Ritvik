@@ -1,0 +1,15 @@
+[0.007s] Invoking command in '/home/ritvik/rover_ws/build/my_rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target gps_node[0m
+[0.048s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_node.dir/src/gps_test.cpp.o[0m
+[1.338s] [01m[K/home/ritvik/rover_ws/src/my_rover/src/gps_test.cpp:[m[K In constructor ‘[01m[KRoverNavigator::RoverNavigator()[m[K’:
+[1.338s] [01m[K/home/ritvik/rover_ws/src/my_rover/src/gps_test.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kimu_data_subscriber_[m[K’?
+[1.338s]    21 |         [01;31m[Kimu_subscriber_[m[K = this->create_subscription<sensor_msgs::msg::Imu>(
+[1.338s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.338s]       |         [32m[Kimu_data_subscriber_[m[K
+[1.338s] [01m[K/home/ritvik/rover_ws/src/my_rover/src/gps_test.cpp:22:36:[m[K [01;31m[Kerror: [m[K‘[01m[KGpsNavigator[m[K’ has not been declared
+[1.338s]    22 |             "/imu", 10, std::bind(&[01;31m[KGpsNavigator[m[K::imuCallback, this, std::placeholders::_1));
+[1.338s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[2.838s] gmake[2]: *** [CMakeFiles/gps_node.dir/build.make:76: CMakeFiles/gps_node.dir/src/gps_test.cpp.o] Error 1
+[2.838s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps_node.dir/all] Error 2
+[2.838s] gmake: *** [Makefile:146: all] Error 2
+[2.842s] Invoked command in '/home/ritvik/rover_ws/build/my_rover' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ritvik/rover_ws/build/my_rover -- -j22 -l22
