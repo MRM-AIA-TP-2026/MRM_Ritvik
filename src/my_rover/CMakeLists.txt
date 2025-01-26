@@ -20,7 +20,7 @@ find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(xacro REQUIRED)
 
-add_executable(gps_node src/navigation.cpp)
+add_executable(gps_node src/nav_trial.cpp)
 ament_target_dependencies(gps_node rclcpp sensor_msgs geometry_msgs std_msgs tf2 tf2_geometry_msgs)
 
 
