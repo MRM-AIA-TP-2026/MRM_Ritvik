@@ -5,79 +5,70 @@
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <cmath>
-#include <memory>
 #include <iostream>
 
 class TerrainExplorer : public rclcpp::Node
 {
 public:
-    TerrainExplorer() : Node("gps_navigator"), earth_radius_(6371000.0)
+    TerrainExplorer() : Node("gps_navigator"), planet_radius_(6371000.0)
     {
-        initializeTargetCoordinates();
+        initializeDestinationCoordinates();
         initializeSubscribers();
         initializePublishers();
-        RCLCPP_INFO(this->get_logger(), "TerrainExplorer initialized. Target: (%.6f, %.6f)", target_lat_, target_lon_);
+        RCLCPP_INFO(this->get_logger(), "TerrainExplorer initialized. Destination: (%.6f, %.6f)", dest_latitude_, dest_longitude_);
     }
 
 private:
-    const double earth_radius_;
-    double target_lat_, target_lon_, current_yaw_;
-    bool mission_complete_ = false;
+    const double planet_radius_;
+    double dest_latitude_, dest_longitude_, current_orientation_;
+    bool goal_reached_ = false;
+    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_subscription_;
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_subscription_;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr velocity_publisher_;
 
-    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_sub_;
-    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
-    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr motion_pub_;
-
-    void initializeTargetCoordinates()
+    void initializeDestinationCoordinates()
     {
         std::cout << "Enter latitude: ";
-        std::cin >> target_lat_;
-
+        std::cin >> dest_latitude_;
         std::cout << "Enter longitude: ";
-        std::cin >> target_lon_;
-
-        this->declare_parameter("target_latitude", target_lat_);
-        this->declare_parameter("target_longitude", target_lon_);
+        std::cin >> dest_longitude_;
+        this->declare_parameter("target_latitude", dest_latitude_);
+        this->declare_parameter("target_longitude", dest_longitude_);
     }
 
     void initializeSubscribers()
     {
-        gps_sub_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
-            "/gps", 10, std::bind(&TerrainExplorer::gpsDataHandler, this, std::placeholders::_1));
-        imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
-            "/imu", 10, std::bind(&TerrainExplorer::imuDataHandler, this, std::placeholders::_1));
+        gps_subscription_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
+            "/gps", 10, std::bind(&TerrainExplorer::gpsCallback, this, std::placeholders::_1));
+        imu_subscription_ = this->create_subscription<sensor_msgs::msg::Imu>(
+            "/imu", 10, std::bind(&TerrainExplorer::imuCallback, this, std::placeholders::_1));
     }
 
     void initializePublishers()
     {
-        motion_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+        velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
     }
 
-    void gpsDataHandler(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
+    void gpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
     {
-        if (mission_complete_) return;
-
-        auto [distance, bearing] = computeNavigationData(msg->latitude, msg->longitude);
-        double heading_diff = normalizeAngle(bearing - current_yaw_);
-
+        if (goal_reached_) return;
+        auto [distance, bearing] = calculateNavigation(msg->latitude, msg->longitude);
+        double heading_difference = normalizeAngle(bearing - current_orientation_);
         RCLCPP_INFO(this->get_logger(), "Navigation update - Distance: %.2f m, Bearing: %.2f rad, Heading diff: %.2f rad",
-                    distance, bearing, heading_diff);
-
+                    distance, bearing, heading_difference);
         if (distance < 0.5)
         {
-            haltRover();
-            mission_complete_ = true;
+            stopRover();
+            goal_reached_ = true;
             RCLCPP_INFO(this->get_logger(), "Destination reached successfully!");
             return;
         }
-
-        double angular_speed = heading_diff;
-        double linear_speed = std::max(0.0, 1.0 - std::abs(heading_diff));
-        
-        commandRoverMotion(linear_speed, angular_speed);
+        double angular_velocity = heading_difference;
+        double linear_velocity = std::max(0.0, 1.0 - std::abs(heading_difference));
+        moveRover(linear_velocity, angular_velocity);
     }
 
-    void imuDataHandler(const sensor_msgs::msg::Imu::SharedPtr msg)
+    void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
     {
         tf2::Quaternion q(
             msg->orientation.x,
@@ -87,31 +78,27 @@ private:
         tf2::Matrix3x3 m(q);
         double roll, pitch, yaw;
         m.getRPY(roll, pitch, yaw);
-        current_yaw_ = yaw;
+        current_orientation_ = yaw;
     }
 
-    std::pair<double, double> computeNavigationData(double lat, double lon)
+    std::pair<double, double> calculateNavigation(double lat, double lon)
     {
         double lat1 = toRadians(lat);
         double lon1 = toRadians(lon);
-        double lat2 = toRadians(target_lat_);
-        double lon2 = toRadians(target_lon_);
-
+        double lat2 = toRadians(dest_latitude_);
+        double lon2 = toRadians(dest_longitude_);
         double dlon = lon2 - lon1;
         double dlat = lat2 - lat1;
-
         double a = std::sin(dlat/2) * std::sin(dlat/2) +
                    std::cos(lat1) * std::cos(lat2) *
                    std::sin(dlon/2) * std::sin(dlon/2);
         double c = 2 * std::atan2(std::sqrt(a), std::sqrt(1-a));
-        double distance = earth_radius_ * c;
-
+        double distance = planet_radius_ * c;
         double y = std::sin(dlon) * std::cos(lat2);
         double x = std::cos(lat1) * std::sin(lat2) -
                    std::sin(lat1) * std::cos(lat2) * std::cos(dlon);
         double bearing = std::atan2(y, x);
         bearing = M_PI + M_PI_2 - bearing;
-
         return {distance, bearing};
     }
 
@@ -122,17 +109,17 @@ private:
         return angle;
     }
 
-    void commandRoverMotion(double linear, double angular)
+    void moveRover(double linear, double angular)
     {
         auto twist_msg = std::make_unique<geometry_msgs::msg::Twist>();
         twist_msg->linear.x = linear;
         twist_msg->angular.z = angular;
-        motion_pub_->publish(std::move(twist_msg));
+        velocity_publisher_->publish(std::move(twist_msg));
     }
 
-    void haltRover()
+    void stopRover()
     {
-        commandRoverMotion(0.0, 0.0);
+        moveRover(0.0, 0.0);
     }
 
     double toRadians(double degrees)
