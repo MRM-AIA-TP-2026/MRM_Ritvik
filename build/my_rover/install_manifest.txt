@@ -1,5 +1,6 @@
 /home/ritvik/rover_ws/install/my_rover/lib/my_rover/gps_node
 /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/robot.launch.py
+/home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/gps.launch.py
 /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/display.launch.py
 /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/gazebo.launch.py
 /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/gps.xacro

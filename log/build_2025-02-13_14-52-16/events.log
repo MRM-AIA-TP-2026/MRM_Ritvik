@@ -1,0 +1,189 @@
+[0.000000] (-) TimerEvent: {}
+[0.000631] (my_rover) JobQueued: {'identifier': 'my_rover', 'dependencies': OrderedDict()}
+[0.000786] (my_rover) JobStarted: {'identifier': 'my_rover'}
+[0.009089] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'cmake'}
+[0.010031] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'build'}
+[0.011393] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ritvik/rover_ws/build/my_rover', '--', '-j22', '-l22'], 'cwd': '/home/ritvik/rover_ws/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ritvik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ritvik'), ('OLDPWD', '/home/ritvik/rover_ws/src/my_rover/src'), ('DESKTOP_SESSION', 'ubuntu-wayland'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ritvik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ritvik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:@/tmp/.ICE-unix/2085,unix/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/41191f01_939e_4491_ad64_d171fd2bf2b4'), ('GNOME_SETUP_DISPLAY', ':2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-wayland'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.T7LP12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.265'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-wayland'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ritvik/rover_ws/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.075677] (my_rover) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gps_node\x1b[0m\n'}
+[0.094571] (my_rover) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gps_node.dir/src/nav_trial.cpp.o\x1b[0m\n'}
+[0.099561] (-) TimerEvent: {}
+[0.199941] (-) TimerEvent: {}
+[0.300492] (-) TimerEvent: {}
+[0.401006] (-) TimerEvent: {}
+[0.501523] (-) TimerEvent: {}
+[0.602092] (-) TimerEvent: {}
+[0.702600] (-) TimerEvent: {}
+[0.803097] (-) TimerEvent: {}
+[0.903590] (-) TimerEvent: {}
+[1.004078] (-) TimerEvent: {}
+[1.104610] (-) TimerEvent: {}
+[1.205145] (-) TimerEvent: {}
+[1.305767] (-) TimerEvent: {}
+[1.406336] (-) TimerEvent: {}
+[1.506901] (-) TimerEvent: {}
+[1.607413] (-) TimerEvent: {}
+[1.707943] (-) TimerEvent: {}
+[1.808453] (-) TimerEvent: {}
+[1.908964] (-) TimerEvent: {}
+[2.009493] (-) TimerEvent: {}
+[2.110063] (-) TimerEvent: {}
+[2.210568] (-) TimerEvent: {}
+[2.311050] (-) TimerEvent: {}
+[2.411619] (-) TimerEvent: {}
+[2.512105] (-) TimerEvent: {}
+[2.612614] (-) TimerEvent: {}
+[2.713102] (-) TimerEvent: {}
+[2.813608] (-) TimerEvent: {}
+[2.914122] (-) TimerEvent: {}
+[3.014647] (-) TimerEvent: {}
+[3.115159] (-) TimerEvent: {}
+[3.215667] (-) TimerEvent: {}
+[3.316166] (-) TimerEvent: {}
+[3.416680] (-) TimerEvent: {}
+[3.517198] (-) TimerEvent: {}
+[3.617722] (-) TimerEvent: {}
+[3.718233] (-) TimerEvent: {}
+[3.818746] (-) TimerEvent: {}
+[3.919249] (-) TimerEvent: {}
+[4.019807] (-) TimerEvent: {}
+[4.120348] (-) TimerEvent: {}
+[4.220867] (-) TimerEvent: {}
+[4.321346] (-) TimerEvent: {}
+[4.421849] (-) TimerEvent: {}
+[4.522383] (-) TimerEvent: {}
+[4.622912] (-) TimerEvent: {}
+[4.723453] (-) TimerEvent: {}
+[4.823987] (-) TimerEvent: {}
+[4.924519] (-) TimerEvent: {}
+[5.025031] (-) TimerEvent: {}
+[5.125536] (-) TimerEvent: {}
+[5.226060] (-) TimerEvent: {}
+[5.326569] (-) TimerEvent: {}
+[5.427063] (-) TimerEvent: {}
+[5.527558] (-) TimerEvent: {}
+[5.628061] (-) TimerEvent: {}
+[5.728634] (-) TimerEvent: {}
+[5.829160] (-) TimerEvent: {}
+[5.929710] (-) TimerEvent: {}
+[6.030208] (-) TimerEvent: {}
+[6.130727] (-) TimerEvent: {}
+[6.231226] (-) TimerEvent: {}
+[6.331792] (-) TimerEvent: {}
+[6.432281] (-) TimerEvent: {}
+[6.532788] (-) TimerEvent: {}
+[6.633255] (-) TimerEvent: {}
+[6.733762] (-) TimerEvent: {}
+[6.834300] (-) TimerEvent: {}
+[6.934852] (-) TimerEvent: {}
+[7.035348] (-) TimerEvent: {}
+[7.135875] (-) TimerEvent: {}
+[7.236433] (-) TimerEvent: {}
+[7.336970] (-) TimerEvent: {}
+[7.437498] (-) TimerEvent: {}
+[7.537970] (-) TimerEvent: {}
+[7.638458] (-) TimerEvent: {}
+[7.738934] (-) TimerEvent: {}
+[7.839441] (-) TimerEvent: {}
+[7.939981] (-) TimerEvent: {}
+[8.040467] (-) TimerEvent: {}
+[8.140938] (-) TimerEvent: {}
+[8.241443] (-) TimerEvent: {}
+[8.341919] (-) TimerEvent: {}
+[8.442420] (-) TimerEvent: {}
+[8.542884] (-) TimerEvent: {}
+[8.643336] (-) TimerEvent: {}
+[8.743805] (-) TimerEvent: {}
+[8.844273] (-) TimerEvent: {}
+[8.944763] (-) TimerEvent: {}
+[9.045241] (-) TimerEvent: {}
+[9.145730] (-) TimerEvent: {}
+[9.246219] (-) TimerEvent: {}
+[9.346751] (-) TimerEvent: {}
+[9.447307] (-) TimerEvent: {}
+[9.547800] (-) TimerEvent: {}
+[9.648246] (-) TimerEvent: {}
+[9.748749] (-) TimerEvent: {}
+[9.849232] (-) TimerEvent: {}
+[9.949740] (-) TimerEvent: {}
+[10.050264] (-) TimerEvent: {}
+[10.150743] (-) TimerEvent: {}
+[10.251189] (-) TimerEvent: {}
+[10.351668] (-) TimerEvent: {}
+[10.452127] (-) TimerEvent: {}
+[10.552611] (-) TimerEvent: {}
+[10.653050] (-) TimerEvent: {}
+[10.753524] (-) TimerEvent: {}
+[10.854012] (-) TimerEvent: {}
+[10.954512] (-) TimerEvent: {}
+[11.054996] (-) TimerEvent: {}
+[11.155481] (-) TimerEvent: {}
+[11.255946] (-) TimerEvent: {}
+[11.356463] (-) TimerEvent: {}
+[11.456934] (-) TimerEvent: {}
+[11.557414] (-) TimerEvent: {}
+[11.657957] (-) TimerEvent: {}
+[11.758499] (-) TimerEvent: {}
+[11.859021] (-) TimerEvent: {}
+[11.959537] (-) TimerEvent: {}
+[12.060039] (-) TimerEvent: {}
+[12.160573] (-) TimerEvent: {}
+[12.261070] (-) TimerEvent: {}
+[12.361607] (-) TimerEvent: {}
+[12.462101] (-) TimerEvent: {}
+[12.562600] (-) TimerEvent: {}
+[12.663062] (-) TimerEvent: {}
+[12.763529] (-) TimerEvent: {}
+[12.864039] (-) TimerEvent: {}
+[12.964579] (-) TimerEvent: {}
+[13.065074] (-) TimerEvent: {}
+[13.165712] (-) TimerEvent: {}
+[13.248932] (my_rover) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable gps_node\x1b[0m\n'}
+[13.265792] (-) TimerEvent: {}
+[13.366252] (-) TimerEvent: {}
+[13.466766] (-) TimerEvent: {}
+[13.567276] (-) TimerEvent: {}
+[13.667771] (-) TimerEvent: {}
+[13.768251] (-) TimerEvent: {}
+[13.868815] (-) TimerEvent: {}
+[13.901686] (my_rover) StdoutLine: {'line': b'[100%] Built target gps_node\n'}
+[13.917207] (my_rover) CommandEnded: {'returncode': 0}
+[13.918199] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'install'}
+[13.929746] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ritvik/rover_ws/build/my_rover'], 'cwd': '/home/ritvik/rover_ws/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ritvik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ritvik'), ('OLDPWD', '/home/ritvik/rover_ws/src/my_rover/src'), ('DESKTOP_SESSION', 'ubuntu-wayland'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ritvik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ritvik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:@/tmp/.ICE-unix/2085,unix/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/41191f01_939e_4491_ad64_d171fd2bf2b4'), ('GNOME_SETUP_DISPLAY', ':2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-wayland'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.T7LP12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.265'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-wayland'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ritvik/rover_ws/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.940336] (my_rover) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.940623] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/rover_ws/install/my_rover/lib/my_rover/gps_node\n'}
+[13.948282] (my_rover) StdoutLine: {'line': b'-- Set runtime path of "/home/ritvik/rover_ws/install/my_rover/lib/my_rover/gps_node" to ""\n'}
+[13.948427] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch\n'}
+[13.948581] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/robot.launch.py\n'}
+[13.948679] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/gps.launch.py\n'}
+[13.948768] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/display.launch.py\n'}
+[13.948856] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//launch/gazebo.launch.py\n'}
+[13.948922] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf\n'}
+[13.948987] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/gps.xacro\n'}
+[13.949054] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/material.xacro\n'}
+[13.949372] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/inertial.xacro\n'}
+[13.949449] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/cam.xacro\n'}
+[13.949513] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/stereo.xacro\n'}
+[13.949573] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/lidar.xacro\n'}
+[13.949635] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/imu.xacro\n'}
+[13.949695] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//urdf/robot.urdf.xacro\n'}
+[13.949751] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//rviz\n'}
+[13.949809] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover//rviz/config.rviz\n'}
+[13.949866] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover\n'}
+[13.949941] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover\n'}
+[13.950000] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.sh\n'}
+[13.950060] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/ament_prefix_path.dsv\n'}
+[13.950121] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/path.sh\n'}
+[13.950180] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/environment/path.dsv\n'}
+[13.950236] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.bash\n'}
+[13.950301] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.sh\n'}
+[13.950369] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.zsh\n'}
+[13.950431] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/local_setup.dsv\n'}
+[13.950488] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/rover_ws/install/my_rover/share/my_rover/package.dsv\n'}
+[13.950547] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/ament_index/resource_index/packages/my_rover\n'}
+[13.950605] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/cmake/my_roverConfig.cmake\n'}
+[13.950666] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/cmake/my_roverConfig-version.cmake\n'}
+[13.950800] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/rover_ws/install/my_rover/share/my_rover/package.xml\n'}
+[13.952199] (my_rover) CommandEnded: {'returncode': 0}
+[13.969042] (-) TimerEvent: {}
+[13.974338] (my_rover) JobEnded: {'identifier': 'my_rover', 'rc': 0}
+[13.975080] (-) EventReactorShutdown: {}

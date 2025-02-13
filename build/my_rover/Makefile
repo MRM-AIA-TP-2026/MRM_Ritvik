@@ -210,29 +210,29 @@ gps_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/build
 .PHONY : gps_node/fast
 
-src/navigation.o: src/navigation.cpp.o
-.PHONY : src/navigation.o
+src/nav_trial.o: src/nav_trial.cpp.o
+.PHONY : src/nav_trial.o
 
 # target to build an object file
-src/navigation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/navigation.cpp.o
-.PHONY : src/navigation.cpp.o
+src/nav_trial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/nav_trial.cpp.o
+.PHONY : src/nav_trial.cpp.o
 
-src/navigation.i: src/navigation.cpp.i
-.PHONY : src/navigation.i
+src/nav_trial.i: src/nav_trial.cpp.i
+.PHONY : src/nav_trial.i
 
 # target to preprocess a source file
-src/navigation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/navigation.cpp.i
-.PHONY : src/navigation.cpp.i
+src/nav_trial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/nav_trial.cpp.i
+.PHONY : src/nav_trial.cpp.i
 
-src/navigation.s: src/navigation.cpp.s
-.PHONY : src/navigation.s
+src/nav_trial.s: src/nav_trial.cpp.s
+.PHONY : src/nav_trial.s
 
 # target to generate assembly for a file
-src/navigation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/navigation.cpp.s
-.PHONY : src/navigation.cpp.s
+src/nav_trial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/nav_trial.cpp.s
+.PHONY : src/nav_trial.cpp.s
 
 # Help Target
 help:
@@ -250,9 +250,9 @@ help:
 	@echo "... my_rover_uninstall"
 	@echo "... uninstall"
 	@echo "... gps_node"
-	@echo "... src/navigation.o"
-	@echo "... src/navigation.i"
-	@echo "... src/navigation.s"
+	@echo "... src/nav_trial.o"
+	@echo "... src/nav_trial.i"
+	@echo "... src/nav_trial.s"
 .PHONY : help
 
 

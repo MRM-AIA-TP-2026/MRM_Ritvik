@@ -69,28 +69,28 @@ include CMakeFiles/gps_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gps_node.dir/flags.make
 
-CMakeFiles/gps_node.dir/src/navigation.cpp.o: CMakeFiles/gps_node.dir/flags.make
-CMakeFiles/gps_node.dir/src/navigation.cpp.o: /home/ritvik/rover_ws/src/my_rover/src/navigation.cpp
-CMakeFiles/gps_node.dir/src/navigation.cpp.o: CMakeFiles/gps_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ritvik/rover_ws/build/my_rover/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gps_node.dir/src/navigation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gps_node.dir/src/navigation.cpp.o -MF CMakeFiles/gps_node.dir/src/navigation.cpp.o.d -o CMakeFiles/gps_node.dir/src/navigation.cpp.o -c /home/ritvik/rover_ws/src/my_rover/src/navigation.cpp
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.o: CMakeFiles/gps_node.dir/flags.make
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.o: /home/ritvik/rover_ws/src/my_rover/src/nav_trial.cpp
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.o: CMakeFiles/gps_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ritvik/rover_ws/build/my_rover/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gps_node.dir/src/nav_trial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gps_node.dir/src/nav_trial.cpp.o -MF CMakeFiles/gps_node.dir/src/nav_trial.cpp.o.d -o CMakeFiles/gps_node.dir/src/nav_trial.cpp.o -c /home/ritvik/rover_ws/src/my_rover/src/nav_trial.cpp
 
-CMakeFiles/gps_node.dir/src/navigation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gps_node.dir/src/navigation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ritvik/rover_ws/src/my_rover/src/navigation.cpp > CMakeFiles/gps_node.dir/src/navigation.cpp.i
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gps_node.dir/src/nav_trial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ritvik/rover_ws/src/my_rover/src/nav_trial.cpp > CMakeFiles/gps_node.dir/src/nav_trial.cpp.i
 
-CMakeFiles/gps_node.dir/src/navigation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gps_node.dir/src/navigation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ritvik/rover_ws/src/my_rover/src/navigation.cpp -o CMakeFiles/gps_node.dir/src/navigation.cpp.s
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gps_node.dir/src/nav_trial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ritvik/rover_ws/src/my_rover/src/nav_trial.cpp -o CMakeFiles/gps_node.dir/src/nav_trial.cpp.s
 
 # Object files for target gps_node
 gps_node_OBJECTS = \
-"CMakeFiles/gps_node.dir/src/navigation.cpp.o"
+"CMakeFiles/gps_node.dir/src/nav_trial.cpp.o"
 
 # External object files for target gps_node
 gps_node_EXTERNAL_OBJECTS =
 
-gps_node: CMakeFiles/gps_node.dir/src/navigation.cpp.o
+gps_node: CMakeFiles/gps_node.dir/src/nav_trial.cpp.o
 gps_node: CMakeFiles/gps_node.dir/build.make
 gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so

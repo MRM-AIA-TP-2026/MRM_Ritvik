@@ -12,8 +12,8 @@ public:
         : Node("rover_navigator")
     {
         // Parameters for destination coordinates and stopping threshold
-        this->declare_parameter("destination_lat", 0.00006);
-        this->declare_parameter("destination_lon", 0.00004);
+        this->declare_parameter("destination_lat", 0.00008);
+        this->declare_parameter("destination_lon", 0.00003);
         this->declare_parameter("stopping_threshold", 0.5);
 
         this->get_parameter("destination_lat", destination_lat_);

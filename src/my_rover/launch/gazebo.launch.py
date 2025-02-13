@@ -1,4 +1,3 @@
-
 import launch
 from launch.actions import ExecuteProcess, DeclareLaunchArgument
 from launch.substitutions import Command, LaunchConfiguration
