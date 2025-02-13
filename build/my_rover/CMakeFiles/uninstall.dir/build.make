@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ritvik/rover_ws/src/my_rover
+CMAKE_SOURCE_DIR = /home/ritvik/MRM_Ritvik/src/my_rover
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ritvik/rover_ws/build/my_rover
+CMAKE_BINARY_DIR = /home/ritvik/MRM_Ritvik/build/my_rover
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ritvik/rover_ws/build/my_rover && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritvik/rover_ws/src/my_rover /home/ritvik/rover_ws/src/my_rover /home/ritvik/rover_ws/build/my_rover /home/ritvik/rover_ws/build/my_rover /home/ritvik/rover_ws/build/my_rover/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ritvik/MRM_Ritvik/build/my_rover && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritvik/MRM_Ritvik/src/my_rover /home/ritvik/MRM_Ritvik/src/my_rover /home/ritvik/MRM_Ritvik/build/my_rover /home/ritvik/MRM_Ritvik/build/my_rover /home/ritvik/MRM_Ritvik/build/my_rover/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gps_node.dir/src/gps_nav.cpp.o"
-  "CMakeFiles/gps_node.dir/src/gps_nav.cpp.o.d"
+  "CMakeFiles/gps_node.dir/src/nav_trial.cpp.o"
+  "CMakeFiles/gps_node.dir/src/nav_trial.cpp.o.d"
   "gps_node"
   "gps_node.pdb"
 )

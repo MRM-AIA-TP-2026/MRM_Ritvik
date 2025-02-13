@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ritvik/rover_ws/src/my_rover
+CMAKE_SOURCE_DIR = /home/ritvik/MRM_Ritvik/src/my_rover
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ritvik/rover_ws/src/my_rover/build/my_rover
+CMAKE_BINARY_DIR = /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles /home/ritvik/rover_ws/src/my_rover/build/my_rover//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover/CMakeFiles /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -210,29 +210,29 @@ gps_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/build
 .PHONY : gps_node/fast
 
-src/gps_nav.o: src/gps_nav.cpp.o
-.PHONY : src/gps_nav.o
+src/nav_trial.o: src/nav_trial.cpp.o
+.PHONY : src/nav_trial.o
 
 # target to build an object file
-src/gps_nav.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/gps_nav.cpp.o
-.PHONY : src/gps_nav.cpp.o
+src/nav_trial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/nav_trial.cpp.o
+.PHONY : src/nav_trial.cpp.o
 
-src/gps_nav.i: src/gps_nav.cpp.i
-.PHONY : src/gps_nav.i
+src/nav_trial.i: src/nav_trial.cpp.i
+.PHONY : src/nav_trial.i
 
 # target to preprocess a source file
-src/gps_nav.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/gps_nav.cpp.i
-.PHONY : src/gps_nav.cpp.i
+src/nav_trial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/nav_trial.cpp.i
+.PHONY : src/nav_trial.cpp.i
 
-src/gps_nav.s: src/gps_nav.cpp.s
-.PHONY : src/gps_nav.s
+src/nav_trial.s: src/nav_trial.cpp.s
+.PHONY : src/nav_trial.s
 
 # target to generate assembly for a file
-src/gps_nav.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/gps_nav.cpp.s
-.PHONY : src/gps_nav.cpp.s
+src/nav_trial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gps_node.dir/build.make CMakeFiles/gps_node.dir/src/nav_trial.cpp.s
+.PHONY : src/nav_trial.cpp.s
 
 # Help Target
 help:
@@ -250,9 +250,9 @@ help:
 	@echo "... my_rover_uninstall"
 	@echo "... uninstall"
 	@echo "... gps_node"
-	@echo "... src/gps_nav.o"
-	@echo "... src/gps_nav.i"
-	@echo "... src/gps_nav.s"
+	@echo "... src/nav_trial.o"
+	@echo "... src/nav_trial.i"
+	@echo "... src/nav_trial.s"
 .PHONY : help
 
 

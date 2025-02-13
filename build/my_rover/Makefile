@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ritvik/rover_ws/src/my_rover
+CMAKE_SOURCE_DIR = /home/ritvik/MRM_Ritvik/src/my_rover
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ritvik/rover_ws/build/my_rover
+CMAKE_BINARY_DIR = /home/ritvik/MRM_Ritvik/build/my_rover
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/rover_ws/build/my_rover/CMakeFiles /home/ritvik/rover_ws/build/my_rover//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/MRM_Ritvik/build/my_rover/CMakeFiles /home/ritvik/MRM_Ritvik/build/my_rover//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/rover_ws/build/my_rover/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritvik/MRM_Ritvik/build/my_rover/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

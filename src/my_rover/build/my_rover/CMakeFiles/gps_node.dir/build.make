@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ritvik/rover_ws/src/my_rover
+CMAKE_SOURCE_DIR = /home/ritvik/MRM_Ritvik/src/my_rover
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ritvik/rover_ws/src/my_rover/build/my_rover
+CMAKE_BINARY_DIR = /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gps_node.dir/depend.make
@@ -69,56 +69,44 @@ include CMakeFiles/gps_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gps_node.dir/flags.make
 
-CMakeFiles/gps_node.dir/src/gps_nav.cpp.o: CMakeFiles/gps_node.dir/flags.make
-CMakeFiles/gps_node.dir/src/gps_nav.cpp.o: ../../src/gps_nav.cpp
-CMakeFiles/gps_node.dir/src/gps_nav.cpp.o: CMakeFiles/gps_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gps_node.dir/src/gps_nav.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gps_node.dir/src/gps_nav.cpp.o -MF CMakeFiles/gps_node.dir/src/gps_nav.cpp.o.d -o CMakeFiles/gps_node.dir/src/gps_nav.cpp.o -c /home/ritvik/rover_ws/src/my_rover/src/gps_nav.cpp
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.o: CMakeFiles/gps_node.dir/flags.make
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.o: ../../src/nav_trial.cpp
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.o: CMakeFiles/gps_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gps_node.dir/src/nav_trial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gps_node.dir/src/nav_trial.cpp.o -MF CMakeFiles/gps_node.dir/src/nav_trial.cpp.o.d -o CMakeFiles/gps_node.dir/src/nav_trial.cpp.o -c /home/ritvik/MRM_Ritvik/src/my_rover/src/nav_trial.cpp
 
-CMakeFiles/gps_node.dir/src/gps_nav.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gps_node.dir/src/gps_nav.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ritvik/rover_ws/src/my_rover/src/gps_nav.cpp > CMakeFiles/gps_node.dir/src/gps_nav.cpp.i
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gps_node.dir/src/nav_trial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ritvik/MRM_Ritvik/src/my_rover/src/nav_trial.cpp > CMakeFiles/gps_node.dir/src/nav_trial.cpp.i
 
-CMakeFiles/gps_node.dir/src/gps_nav.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gps_node.dir/src/gps_nav.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ritvik/rover_ws/src/my_rover/src/gps_nav.cpp -o CMakeFiles/gps_node.dir/src/gps_nav.cpp.s
+CMakeFiles/gps_node.dir/src/nav_trial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gps_node.dir/src/nav_trial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ritvik/MRM_Ritvik/src/my_rover/src/nav_trial.cpp -o CMakeFiles/gps_node.dir/src/nav_trial.cpp.s
 
 # Object files for target gps_node
 gps_node_OBJECTS = \
-"CMakeFiles/gps_node.dir/src/gps_nav.cpp.o"
+"CMakeFiles/gps_node.dir/src/nav_trial.cpp.o"
 
 # External object files for target gps_node
 gps_node_EXTERNAL_OBJECTS =
 
-gps_node: CMakeFiles/gps_node.dir/src/gps_nav.cpp.o
+gps_node: CMakeFiles/gps_node.dir/src/nav_trial.cpp.o
 gps_node: CMakeFiles/gps_node.dir/build.make
-gps_node: /opt/ros/humble/lib/librclcpp.so
 gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
+gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+gps_node: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+gps_node: /opt/ros/humble/lib/libtf2_ros.so
+gps_node: /opt/ros/humble/lib/libtf2.so
+gps_node: /opt/ros/humble/lib/libmessage_filters.so
+gps_node: /opt/ros/humble/lib/librclcpp_action.so
+gps_node: /opt/ros/humble/lib/librclcpp.so
 gps_node: /opt/ros/humble/lib/liblibstatistics_collector.so
-gps_node: /opt/ros/humble/lib/librcl.so
-gps_node: /opt/ros/humble/lib/librmw_implementation.so
-gps_node: /opt/ros/humble/lib/libament_index_cpp.so
-gps_node: /opt/ros/humble/lib/librcl_logging_spdlog.so
-gps_node: /opt/ros/humble/lib/librcl_logging_interface.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
-gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
-gps_node: /opt/ros/humble/lib/librcl_yaml_param_parser.so
-gps_node: /opt/ros/humble/lib/libyaml.so
 gps_node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 gps_node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 gps_node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -135,43 +123,85 @@ gps_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 gps_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 gps_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 gps_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/librcl_action.so
+gps_node: /opt/ros/humble/lib/librcl.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
+gps_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/librcl_yaml_param_parser.so
+gps_node: /opt/ros/humble/lib/libyaml.so
 gps_node: /opt/ros/humble/lib/libtracetools.so
+gps_node: /opt/ros/humble/lib/librmw_implementation.so
+gps_node: /opt/ros/humble/lib/libament_index_cpp.so
+gps_node: /opt/ros/humble/lib/librcl_logging_spdlog.so
+gps_node: /opt/ros/humble/lib/librcl_logging_interface.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
+gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 gps_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
 gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 gps_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 gps_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 gps_node: /opt/ros/humble/lib/librmw.so
-gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
+gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
 gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 gps_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 gps_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
-gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
-gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
-gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
-gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-gps_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_cpp.so
 gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 gps_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so
+gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_c.so
+gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
+gps_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
+gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
+gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+gps_node: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
+gps_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 gps_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 gps_node: /opt/ros/humble/lib/librcpputils.so
+gps_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 gps_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 gps_node: /opt/ros/humble/lib/librcutils.so
 gps_node: CMakeFiles/gps_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gps_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gps_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gps_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +213,6 @@ CMakeFiles/gps_node.dir/clean:
 .PHONY : CMakeFiles/gps_node.dir/clean
 
 CMakeFiles/gps_node.dir/depend:
-	cd /home/ritvik/rover_ws/src/my_rover/build/my_rover && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritvik/rover_ws/src/my_rover /home/ritvik/rover_ws/src/my_rover /home/ritvik/rover_ws/src/my_rover/build/my_rover /home/ritvik/rover_ws/src/my_rover/build/my_rover /home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/gps_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritvik/MRM_Ritvik/src/my_rover /home/ritvik/MRM_Ritvik/src/my_rover /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover/CMakeFiles/gps_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gps_node.dir/depend
 

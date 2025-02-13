@@ -1,0 +1,6 @@
+Invoking command in '/home/ritvik/MRM_Ritvik/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ritvik/MRM_Ritvik/src/my_rover -DCMAKE_INSTALL_PREFIX=/home/ritvik/MRM_Ritvik/install/my_rover
+Invoked command in '/home/ritvik/MRM_Ritvik/build/my_rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ritvik/MRM_Ritvik/src/my_rover -DCMAKE_INSTALL_PREFIX=/home/ritvik/MRM_Ritvik/install/my_rover
+Invoking command in '/home/ritvik/MRM_Ritvik/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/MRM_Ritvik/build/my_rover -- -j22 -l22
+Invoked command in '/home/ritvik/MRM_Ritvik/build/my_rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/MRM_Ritvik/build/my_rover -- -j22 -l22
+Invoking command in '/home/ritvik/MRM_Ritvik/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ritvik/MRM_Ritvik/build/my_rover
+Invoked command in '/home/ritvik/MRM_Ritvik/build/my_rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ritvik/MRM_Ritvik/build/my_rover

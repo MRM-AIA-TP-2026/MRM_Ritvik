@@ -1,0 +1,2 @@
+Invoking command in '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover -- -j22 -l22
+Invoked command in '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover -- -j22 -l22

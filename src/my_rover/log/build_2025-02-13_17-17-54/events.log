@@ -1,0 +1,335 @@
+[0.000000] (-) TimerEvent: {}
+[0.001179] (my_rover) JobQueued: {'identifier': 'my_rover', 'dependencies': OrderedDict()}
+[0.001288] (my_rover) JobStarted: {'identifier': 'my_rover'}
+[0.009195] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'cmake'}
+[0.009665] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '/home/ritvik/MRM_Ritvik/src/my_rover', '-DCMAKE_INSTALL_PREFIX=/home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover'], 'cwd': '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ritvik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ritvik'), ('OLDPWD', '/home/ritvik/MRM_Ritvik/src'), ('DESKTOP_SESSION', 'ubuntu-wayland'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ritvik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ritvik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:@/tmp/.ICE-unix/2085,unix/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/027f309b_3770_4493_b493_c6711bda2256'), ('GNOME_SETUP_DISPLAY', ':2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-wayland'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.T7LP12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.589'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-wayland'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.095754] (my_rover) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099670] (-) TimerEvent: {}
+[0.165541] (my_rover) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.174342] (my_rover) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199803] (-) TimerEvent: {}
+[0.263468] (my_rover) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.272593] (my_rover) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.273016] (my_rover) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.273376] (my_rover) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.277033] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299892] (-) TimerEvent: {}
+[0.381686] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.390912] (my_rover) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.391311] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.391896] (my_rover) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.394609] (my_rover) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399987] (-) TimerEvent: {}
+[0.500349] (-) TimerEvent: {}
+[0.571739] (my_rover) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600436] (-) TimerEvent: {}
+[0.678008] (my_rover) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.700538] (-) TimerEvent: {}
+[0.718703] (my_rover) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.722888] (my_rover) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.730820] (my_rover) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.741832] (my_rover) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.756395] (my_rover) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.796326] (my_rover) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.798577] (my_rover) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800619] (-) TimerEvent: {}
+[0.895672] (my_rover) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.900727] (-) TimerEvent: {}
+[0.932562] (my_rover) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.989427] (my_rover) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.998765] (my_rover) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.000811] (-) TimerEvent: {}
+[1.096677] (my_rover) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.097186] (my_rover) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.100875] (-) TimerEvent: {}
+[1.190365] (my_rover) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.191974] (my_rover) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.200979] (-) TimerEvent: {}
+[1.259845] (my_rover) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.261534] (my_rover) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.278037] (my_rover) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.301080] (-) TimerEvent: {}
+[1.401455] (-) TimerEvent: {}
+[1.410917] (my_rover) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.474403] (my_rover) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.497594] (my_rover) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.501543] (-) TimerEvent: {}
+[1.531449] (my_rover) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.551730] (my_rover) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.556340] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.563522] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.565389] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.565935] (my_rover) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.572427] (my_rover) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.589043] (my_rover) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.601681] (-) TimerEvent: {}
+[1.629740] (my_rover) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.637750] (my_rover) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.651551] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.657595] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.657790] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.663299] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.663469] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.669264] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.669436] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.675076] (my_rover) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.675267] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.680523] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.680678] (my_rover) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.685629] (my_rover) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.701761] (-) TimerEvent: {}
+[1.782033] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.784300] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.784945] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.801862] (-) TimerEvent: {}
+[1.804622] (my_rover) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.817567] (my_rover) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.823959] (my_rover) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.842166] (my_rover) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.889457] (my_rover) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.896731] (my_rover) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.901957] (-) TimerEvent: {}
+[1.911406] (my_rover) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.952066] (my_rover) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.954389] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.955074] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.978946] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.985402] (my_rover) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.001806] (my_rover) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.002000] (-) TimerEvent: {}
+[2.045954] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.048025] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.048648] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.048921] (my_rover) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.050204] (my_rover) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.052082] (my_rover) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.065733] (my_rover) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.066343] (my_rover) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.068283] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.069058] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.069517] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.072197] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.072758] (my_rover) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.102139] (-) TimerEvent: {}
+[2.170887] (my_rover) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.181286] (my_rover) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.197389] (my_rover) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.202222] (-) TimerEvent: {}
+[2.241323] (my_rover) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.248465] (my_rover) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.264357] (my_rover) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.302351] (-) TimerEvent: {}
+[2.305608] (my_rover) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.306280] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.306861] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.307387] (my_rover) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.311409] (my_rover) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.311829] (my_rover) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[2.327642] (my_rover) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[2.372380] (my_rover) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[2.400512] (my_rover) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.402273] (my_rover) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.402421] (-) TimerEvent: {}
+[2.402606] (my_rover) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.502594] (-) TimerEvent: {}
+[2.556280] (my_rover) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.17 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[2.598668] (my_rover) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.11 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.602692] (-) TimerEvent: {}
+[2.603167] (my_rover) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[2.606062] (my_rover) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.690570] (my_rover) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.690923] (my_rover) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.691018] (my_rover) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.692242] (my_rover) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.694151] (my_rover) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.695382] (my_rover) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.702243] (my_rover) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.702398] (my_rover) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.702750] (-) TimerEvent: {}
+[2.703670] (my_rover) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.704687] (my_rover) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.718397] (my_rover) StdoutLine: {'line': b'-- Generating done\n'}
+[2.724023] (my_rover) StdoutLine: {'line': b'-- Build files have been written to: /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover\n'}
+[2.741721] (my_rover) CommandEnded: {'returncode': 0}
+[2.742877] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'build'}
+[2.745096] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover', '--', '-j22', '-l22'], 'cwd': '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ritvik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ritvik'), ('OLDPWD', '/home/ritvik/MRM_Ritvik/src'), ('DESKTOP_SESSION', 'ubuntu-wayland'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ritvik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ritvik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:@/tmp/.ICE-unix/2085,unix/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/027f309b_3770_4493_b493_c6711bda2256'), ('GNOME_SETUP_DISPLAY', ':2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-wayland'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.T7LP12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.589'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-wayland'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.802918] (-) TimerEvent: {}
+[2.806553] (my_rover) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gps_node.dir/src/nav_trial.cpp.o\x1b[0m\n'}
+[2.903192] (-) TimerEvent: {}
+[3.003738] (-) TimerEvent: {}
+[3.104243] (-) TimerEvent: {}
+[3.204730] (-) TimerEvent: {}
+[3.305245] (-) TimerEvent: {}
+[3.405775] (-) TimerEvent: {}
+[3.506317] (-) TimerEvent: {}
+[3.606847] (-) TimerEvent: {}
+[3.707397] (-) TimerEvent: {}
+[3.807915] (-) TimerEvent: {}
+[3.908452] (-) TimerEvent: {}
+[4.008975] (-) TimerEvent: {}
+[4.109497] (-) TimerEvent: {}
+[4.210009] (-) TimerEvent: {}
+[4.310551] (-) TimerEvent: {}
+[4.411064] (-) TimerEvent: {}
+[4.511569] (-) TimerEvent: {}
+[4.612069] (-) TimerEvent: {}
+[4.712583] (-) TimerEvent: {}
+[4.813078] (-) TimerEvent: {}
+[4.913692] (-) TimerEvent: {}
+[5.014256] (-) TimerEvent: {}
+[5.114762] (-) TimerEvent: {}
+[5.215254] (-) TimerEvent: {}
+[5.315781] (-) TimerEvent: {}
+[5.416317] (-) TimerEvent: {}
+[5.516832] (-) TimerEvent: {}
+[5.617370] (-) TimerEvent: {}
+[5.717868] (-) TimerEvent: {}
+[5.818395] (-) TimerEvent: {}
+[5.918917] (-) TimerEvent: {}
+[6.019447] (-) TimerEvent: {}
+[6.119954] (-) TimerEvent: {}
+[6.220485] (-) TimerEvent: {}
+[6.321005] (-) TimerEvent: {}
+[6.421650] (-) TimerEvent: {}
+[6.522173] (-) TimerEvent: {}
+[6.622757] (-) TimerEvent: {}
+[6.723266] (-) TimerEvent: {}
+[6.823787] (-) TimerEvent: {}
+[6.924309] (-) TimerEvent: {}
+[7.024814] (-) TimerEvent: {}
+[7.125340] (-) TimerEvent: {}
+[7.225867] (-) TimerEvent: {}
+[7.326398] (-) TimerEvent: {}
+[7.426912] (-) TimerEvent: {}
+[7.527432] (-) TimerEvent: {}
+[7.627967] (-) TimerEvent: {}
+[7.728509] (-) TimerEvent: {}
+[7.829002] (-) TimerEvent: {}
+[7.929500] (-) TimerEvent: {}
+[8.030005] (-) TimerEvent: {}
+[8.130523] (-) TimerEvent: {}
+[8.231000] (-) TimerEvent: {}
+[8.331486] (-) TimerEvent: {}
+[8.431981] (-) TimerEvent: {}
+[8.532512] (-) TimerEvent: {}
+[8.633000] (-) TimerEvent: {}
+[8.733495] (-) TimerEvent: {}
+[8.833993] (-) TimerEvent: {}
+[8.934514] (-) TimerEvent: {}
+[9.035003] (-) TimerEvent: {}
+[9.135519] (-) TimerEvent: {}
+[9.236040] (-) TimerEvent: {}
+[9.336554] (-) TimerEvent: {}
+[9.437060] (-) TimerEvent: {}
+[9.537601] (-) TimerEvent: {}
+[9.638137] (-) TimerEvent: {}
+[9.738637] (-) TimerEvent: {}
+[9.839172] (-) TimerEvent: {}
+[9.939706] (-) TimerEvent: {}
+[10.040228] (-) TimerEvent: {}
+[10.140717] (-) TimerEvent: {}
+[10.241235] (-) TimerEvent: {}
+[10.341737] (-) TimerEvent: {}
+[10.442247] (-) TimerEvent: {}
+[10.542729] (-) TimerEvent: {}
+[10.643227] (-) TimerEvent: {}
+[10.743720] (-) TimerEvent: {}
+[10.844252] (-) TimerEvent: {}
+[10.944746] (-) TimerEvent: {}
+[11.045244] (-) TimerEvent: {}
+[11.145712] (-) TimerEvent: {}
+[11.246229] (-) TimerEvent: {}
+[11.346738] (-) TimerEvent: {}
+[11.447238] (-) TimerEvent: {}
+[11.547727] (-) TimerEvent: {}
+[11.648215] (-) TimerEvent: {}
+[11.748659] (-) TimerEvent: {}
+[11.849147] (-) TimerEvent: {}
+[11.949640] (-) TimerEvent: {}
+[12.050108] (-) TimerEvent: {}
+[12.150584] (-) TimerEvent: {}
+[12.251047] (-) TimerEvent: {}
+[12.351521] (-) TimerEvent: {}
+[12.452014] (-) TimerEvent: {}
+[12.552533] (-) TimerEvent: {}
+[12.653063] (-) TimerEvent: {}
+[12.753554] (-) TimerEvent: {}
+[12.854031] (-) TimerEvent: {}
+[12.954541] (-) TimerEvent: {}
+[13.055039] (-) TimerEvent: {}
+[13.155573] (-) TimerEvent: {}
+[13.256065] (-) TimerEvent: {}
+[13.356536] (-) TimerEvent: {}
+[13.456995] (-) TimerEvent: {}
+[13.557494] (-) TimerEvent: {}
+[13.657961] (-) TimerEvent: {}
+[13.758442] (-) TimerEvent: {}
+[13.858919] (-) TimerEvent: {}
+[13.959407] (-) TimerEvent: {}
+[14.059871] (-) TimerEvent: {}
+[14.160382] (-) TimerEvent: {}
+[14.260904] (-) TimerEvent: {}
+[14.361446] (-) TimerEvent: {}
+[14.461953] (-) TimerEvent: {}
+[14.562478] (-) TimerEvent: {}
+[14.662995] (-) TimerEvent: {}
+[14.763537] (-) TimerEvent: {}
+[14.864174] (-) TimerEvent: {}
+[14.964655] (-) TimerEvent: {}
+[15.065136] (-) TimerEvent: {}
+[15.165575] (-) TimerEvent: {}
+[15.266015] (-) TimerEvent: {}
+[15.366499] (-) TimerEvent: {}
+[15.466999] (-) TimerEvent: {}
+[15.567534] (-) TimerEvent: {}
+[15.668062] (-) TimerEvent: {}
+[15.768566] (-) TimerEvent: {}
+[15.820561] (my_rover) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable gps_node\x1b[0m\n'}
+[15.868727] (-) TimerEvent: {}
+[15.969199] (-) TimerEvent: {}
+[16.069583] (-) TimerEvent: {}
+[16.170071] (-) TimerEvent: {}
+[16.270604] (-) TimerEvent: {}
+[16.371090] (-) TimerEvent: {}
+[16.436253] (my_rover) StdoutLine: {'line': b'[100%] Built target gps_node\n'}
+[16.452017] (my_rover) CommandEnded: {'returncode': 0}
+[16.453220] (my_rover) JobProgress: {'identifier': 'my_rover', 'progress': 'install'}
+[16.464525] (my_rover) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover'], 'cwd': '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'ritvik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ritvik'), ('OLDPWD', '/home/ritvik/MRM_Ritvik/src'), ('DESKTOP_SESSION', 'ubuntu-wayland'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ritvik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ritvik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:@/tmp/.ICE-unix/2085,unix/ritvik-OMEN-Transcend-Gaming-Laptop-14-fb0xxx:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/027f309b_3770_4493_b493_c6711bda2256'), ('GNOME_SETUP_DISPLAY', ':2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-wayland'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.T7LP12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.589'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-wayland'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=be7bf371c4075875f5f02b4267adb080'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[16.471142] (-) TimerEvent: {}
+[16.474011] (my_rover) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.474316] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/lib/my_rover/gps_node\n'}
+[16.482725] (my_rover) StdoutLine: {'line': b'-- Set runtime path of "/home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/lib/my_rover/gps_node" to ""\n'}
+[16.482896] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//launch\n'}
+[16.482974] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//launch/robot.launch.py\n'}
+[16.483043] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//launch/gps.launch.py\n'}
+[16.483117] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//launch/display.launch.py\n'}
+[16.483208] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//launch/gazebo.launch.py\n'}
+[16.483349] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf\n'}
+[16.483439] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/gps.xacro\n'}
+[16.483501] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/material.xacro\n'}
+[16.483596] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/inertial.xacro\n'}
+[16.483655] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/cam.xacro\n'}
+[16.483740] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/stereo.xacro\n'}
+[16.483818] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/lidar.xacro\n'}
+[16.483877] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/imu.xacro\n'}
+[16.483935] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//urdf/robot.urdf.xacro\n'}
+[16.483997] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//rviz\n'}
+[16.484080] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover//rviz/config.rviz\n'}
+[16.484145] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/ament_index/resource_index/package_run_dependencies/my_rover\n'}
+[16.484225] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/ament_index/resource_index/parent_prefix_path/my_rover\n'}
+[16.484281] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/environment/ament_prefix_path.sh\n'}
+[16.484343] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/environment/ament_prefix_path.dsv\n'}
+[16.484403] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/environment/path.sh\n'}
+[16.484464] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/environment/path.dsv\n'}
+[16.484525] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/local_setup.bash\n'}
+[16.484619] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/local_setup.sh\n'}
+[16.484680] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/local_setup.zsh\n'}
+[16.484739] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/local_setup.dsv\n'}
+[16.484819] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/package.dsv\n'}
+[16.484875] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/ament_index/resource_index/packages/my_rover\n'}
+[16.484937] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/cmake/my_roverConfig.cmake\n'}
+[16.485036] (my_rover) StdoutLine: {'line': b'-- Installing: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/cmake/my_roverConfig-version.cmake\n'}
+[16.485103] (my_rover) StdoutLine: {'line': b'-- Up-to-date: /home/ritvik/MRM_Ritvik/src/my_rover/install/my_rover/share/my_rover/package.xml\n'}
+[16.486986] (my_rover) CommandEnded: {'returncode': 0}
+[16.502860] (my_rover) JobEnded: {'identifier': 'my_rover', 'rc': 0}
+[16.503741] (-) EventReactorShutdown: {}

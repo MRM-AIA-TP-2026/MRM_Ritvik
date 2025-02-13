@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ritvik/rover_ws/src/my_rover
+CMAKE_SOURCE_DIR = /home/ritvik/MRM_Ritvik/src/my_rover
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ritvik/rover_ws/src/my_rover/build/my_rover
+CMAKE_BINARY_DIR = /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover
 
 # Utility rule file for my_rover_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/my_rover_uninstall.dir/compiler_depend.make
 include CMakeFiles/my_rover_uninstall.dir/progress.make
 
 CMakeFiles/my_rover_uninstall:
-	/usr/bin/cmake -P /home/ritvik/rover_ws/src/my_rover/build/my_rover/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 my_rover_uninstall: CMakeFiles/my_rover_uninstall
 my_rover_uninstall: CMakeFiles/my_rover_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/my_rover_uninstall.dir/clean:
 .PHONY : CMakeFiles/my_rover_uninstall.dir/clean
 
 CMakeFiles/my_rover_uninstall.dir/depend:
-	cd /home/ritvik/rover_ws/src/my_rover/build/my_rover && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritvik/rover_ws/src/my_rover /home/ritvik/rover_ws/src/my_rover /home/ritvik/rover_ws/src/my_rover/build/my_rover /home/ritvik/rover_ws/src/my_rover/build/my_rover /home/ritvik/rover_ws/src/my_rover/build/my_rover/CMakeFiles/my_rover_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ritvik/MRM_Ritvik/src/my_rover /home/ritvik/MRM_Ritvik/src/my_rover /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover /home/ritvik/MRM_Ritvik/src/my_rover/build/my_rover/CMakeFiles/my_rover_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_rover_uninstall.dir/depend
 
