@@ -82,8 +82,8 @@ private:
             return;
         }
 
-        double angular_velocity = orientation_error * 2.0; // Adjusted gain for smoother turning
-        double linear_velocity = std::max(0.0, 1.0 - std::abs(orientation_error)); // Scaled linear velocity
+        double angular_velocity = orientation_error * 2.0; 
+        double linear_velocity = std::max(0.0, 1.0 - std::abs(orientation_error)); 
 
         publishVelocityCommand(linear_velocity, angular_velocity);
     }
