@@ -3,140 +3,117 @@
 #include <sensor_msgs/msg/imu.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 #include <cmath>
-#include <optional>
+#include <iostream>
 
-class RoverNavigator : public rclcpp::Node
-{
+class RoverNavigator : public rclcpp::Node {
 public:
-    RoverNavigator()
-        : Node("rover_navigator")
-    {
-        destination_lat_ = 0.00007; // New destination latitude
-        destination_lon_ = 0.00003; // New destination longitude
-        destination_reached_ = false;
+    RoverNavigator() : Node("gps_navigator"), heading_(0.0), reached_target_(false) 
+ {
+        std::cout << "Enter target latitude: ";
+        std::cin >> target_latitude_;
+        
+        std::cout << "Enter target longitude: ";
+        std::cin >> target_longitude_;
+        
+        gps_sub_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
+            "/gps", 10, std::bind(&RoverNavigator::onGpsUpdate, this, std::placeholders::_1));
 
-        gps_data_subscriber_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
-            "/gps", 10, std::bind(&RoverNavigator::processGpsData, this, std::placeholders::_1));
+        imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
+            "/imu", 10, std::bind(&RoverNavigator::onImuUpdate, this, std::placeholders::_1));
 
-        imu_data_subscriber_ = this->create_subscription<sensor_msgs::msg::Imu>(
-            "/imu", 10, std::bind(&RoverNavigator::processImuData, this, std::placeholders::_1));
-
-        velocity_command_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
-
-        RCLCPP_INFO(this->get_logger(), "Rover Navigator Node Initialized");
+        velocity_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
     }
 
 private:
-    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_data_subscriber_;
-    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_data_subscriber_;
-    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr velocity_command_publisher_;
+    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr velocity_pub_;
+    
+    double target_latitude_;
+    double target_longitude_;
+    double heading_;
+    bool reached_target_;
 
-    double destination_lat_;
-    double destination_lon_;
-    std::optional<double> previous_lat_;
-    std::optional<double> previous_lon_;
-    double current_orientation_ = 0.0;
-    bool destination_reached_;
-
-    void processGpsData(const sensor_msgs::msg::NavSatFix::SharedPtr msg)
-    {
-        if (destination_reached_)
-        {
-            publishVelocityCommand(0.0, 0.0);
+    void onGpsUpdate(const sensor_msgs::msg::NavSatFix::SharedPtr msg) {
+        if (reached_target_) {
+            issueMovementCommand(0.0, 0.0);
             return;
         }
 
         double current_lat = msg->latitude;
         double current_lon = msg->longitude;
 
-        if (previous_lat_ && previous_lon_)
-        {
-            current_orientation_ = calculateBearing(*previous_lat_, *previous_lon_, current_lat, current_lon);
-        }
+        double distance_to_goal = computeHaversine(current_lat, current_lon, target_latitude_, target_longitude_);
+        double required_heading = computeTargetHeading(current_lat, current_lon, target_latitude_, target_longitude_);
+        
+        double heading_error = normalizeAngle(required_heading - heading_);
 
-        previous_lat_ = current_lat;
-        previous_lon_ = current_lon;
+        RCLCPP_INFO(this->get_logger(), "Distance: %.2f m | Current Heading: %.2f rad | Target Heading: %.2f rad | Heading Error: %.2f rad", 
+                    distance_to_goal, heading_, required_heading, heading_error);
 
-        double distance = computeHaversineDistance(current_lat, current_lon, destination_lat_, destination_lon_);
-        double desired_orientation = calculateBearing(current_lat, current_lon, destination_lat_, destination_lon_);
-        double orientation_error = adjustAngle(desired_orientation - current_orientation_);
-
-        RCLCPP_INFO(this->get_logger(), "Distance to Destination: %.2f m", distance);
-        RCLCPP_INFO(this->get_logger(), "Current Orientation: %.2f rad, Desired Orientation: %.2f rad, Orientation Error: %.2f rad",
-                    current_orientation_, desired_orientation, orientation_error);
-
-        if (distance < 1.0)
-        {
-            publishVelocityCommand(0.0, 0.0);
-            RCLCPP_INFO(this->get_logger(), "Destination Reached.");
-            destination_reached_ = true;
+        if (distance_to_goal < 0.5) {
+            issueMovementCommand(0.0, 0.0);
+            RCLCPP_INFO(this->get_logger(), "Target reached.");
+            reached_target_ = true;
             return;
         }
 
-        double angular_velocity = orientation_error * 3.0;
-        double linear_velocity = std::max(0.0, 1.0 - std::abs(orientation_error));
-
-        publishVelocityCommand(linear_velocity, angular_velocity);
+        double angular_velocity = heading_error;
+        double linear_velocity = std::max(0.0, 1.0 - std::abs(heading_error));
+        
+        issueMovementCommand(linear_velocity, angular_velocity);
     }
 
-    void processImuData(const sensor_msgs::msg::Imu::SharedPtr msg)
-    {
+    void onImuUpdate(const sensor_msgs::msg::Imu::SharedPtr msg) {
         auto q = msg->orientation;
-        double siny_cosp = 2.0 * (q.w * q.z + q.x * q.y);
-        double cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z);
-        current_orientation_ = std::atan2(siny_cosp, cosy_cosp);
-
-        RCLCPP_INFO(this->get_logger(), "Updated IMU Orientation: %.2f radians", current_orientation_);
+        double sin_yaw = 2.0 * (q.w * q.z + q.x * q.y);
+        double cos_yaw = 1.0 - 2.0 * (q.y * q.y + q.z * q.z);
+        heading_ = std::atan2(sin_yaw, cos_yaw);
     }
 
-    double computeHaversineDistance(double lat1, double lon1, double lat2, double lon2)
-    {
+    double computeHaversine(double lat1, double lon1, double lat2, double lon2) {
         const double R = 6371000;
-        double dlat = degreesToRadians(lat2 - lat1);
-        double dlon = degreesToRadians(lon2 - lon1);
+        const double to_rad = M_PI / 180.0;
+        
+        double dlat = (lat2 - lat1) * to_rad;
+        double dlon = (lon2 - lon1) * to_rad;
+        
         double a = std::sin(dlat / 2) * std::sin(dlat / 2) +
-                   std::cos(degreesToRadians(lat1)) * std::cos(degreesToRadians(lat2)) *
+                   std::cos(lat1 * to_rad) * std::cos(lat2 * to_rad) *
                    std::sin(dlon / 2) * std::sin(dlon / 2);
-        double c = 2 * std::atan2(std::sqrt(a), std::sqrt(1 - a));
-        return R * c;
+        
+        return R * (2 * std::atan2(std::sqrt(a), std::sqrt(1 - a)));
     }
 
-    double calculateBearing(double lat1, double lon1, double lat2, double lon2)
-    {
-        double dlon = degreesToRadians(lon2 - lon1);
-        double y = std::sin(dlon) * std::cos(degreesToRadians(lat2));
-        double x = std::cos(degreesToRadians(lat1)) * std::sin(degreesToRadians(lat2)) -
-                   std::sin(degreesToRadians(lat1)) * std::cos(degreesToRadians(lat2)) * std::cos(dlon);
-        return std::atan2(y, x);
+    double computeTargetHeading(double lat1, double lon1, double lat2, double lon2) {
+        const double to_rad = M_PI / 180.0;
+        double delta_lon = (lon2 - lon1) * to_rad;
+        
+        double y = std::sin(delta_lon) * std::cos(lat2 * to_rad);
+        double x = std::cos(lat1 * to_rad) * std::sin(lat2 * to_rad) -
+                   std::sin(lat1 * to_rad) * std::cos(lat2 * to_rad) * std::cos(delta_lon);
+        
+        return normalizeAngle(M_PI + M_PI_2 - std::atan2(y, x));
     }
 
-    double adjustAngle(double angle)
-    {
-        while (angle > M_PI)
-            angle -= 2 * M_PI;
-        while (angle < -M_PI)
-            angle += 2 * M_PI;
+    double normalizeAngle(double angle) {
+        while (angle > M_PI) angle -= 2 * M_PI;
+        while (angle < -M_PI) angle += 2 * M_PI;
         return angle;
     }
 
-    double degreesToRadians(double degrees)
-    {
-        return degrees * M_PI / 180.0;
-    }
-
-    void publishVelocityCommand(double linear, double angular)
-    {
-        geometry_msgs::msg::Twist twist_msg;
-        twist_msg.linear.x = linear;
-        twist_msg.angular.z = angular;
-        velocity_command_publisher_->publish(twist_msg);
+    void issueMovementCommand(double linear, double angular) {
+        auto msg = geometry_msgs::msg::Twist();
+        msg.linear.x = linear;
+        msg.angular.z = angular;
+        velocity_pub_->publish(msg);
     }
 };
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<RoverNavigator>());
     rclcpp::shutdown();
     return 0;
 }
+
